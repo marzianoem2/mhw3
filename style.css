@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color: #f1eeee;
+    text-align: center;
+    font-size: 20px;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-image: url(header_background.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    background-color: rgba(251, 251, 251, 0.1);
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    color: white;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    padding: 0.3% 0.3%;
+    box-sizing: border-box;
+}
+
+/* titolo BookLife */
+nav p {
+    font-family: 'Solitreo', cursive;    
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(59, 59, 59);
+}
+
+nav div {
+    padding-left: 10%;
+    width: 70%;
+    text-align: right;
+}
+
+nav div a {
+    text-decoration: none;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 1%;
+    letter-spacing: 1%;
+}
+
+nav div a:hover {
+    text-decoration: none;
+    color: rgba(70, 58, 29, 0.9);
+    cursor: pointer;
+}
+
+#find-auth {
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+#find-auth:hover {
+    text-decoration: none;
+    background-color: white;
+    color: rgba(70, 58, 29, 0.9);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+#articles article {
+    width: 44%;
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#articles article:hover {
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+
+.dots {
+    text-decoration: none;
+    letter-spacing: 3%;
+    color: #81a5be;
+    font-size: 2em;
+}
+
+.dots:hover {
+    color: #1e262e;
+}
+
+#dictionary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10% 10%;
+    box-sizing: border-box;
+    border-top: 1px solid lightgrey;
+}
+
+#search-bar {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%;
+}
+
+#search-bar p {
+    font-size: 1.5em;
+}
+
+#search-bar input {
+    box-sizing: border-box;
+    padding: 1.5%;
+    margin: 0.5% 0;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 1.1em;
+    font-family: inherit;
+}
+
+#search-bar input[type=text]::placeholder {
+    color: lightgrey;
+}
+
+#search-bar input:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+}
+
+#search-bar input[type=text]:focus {
+    outline: none;
+}
+
+#search-bar input[type=submit] {
+    background-color: rgb(233, 199, 54);
+    color: darkslategrey;
+}
+
+
+#results {
+    text-align: center;
+    padding: 2%;
+    margin: 0.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#results p {
+    font-size: 2em;
+    font-family: inherit;
+    font-style: italic;
+}
+
+#results button {
+    box-sizing: border-box;
+    padding: 1.5%;
+    margin: 0.5% 0;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: inherit;
+}
+
+#results button:hover {
+    background-color: rgb(233, 199, 54);
+    color: darkslategrey;
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(162, 63, 22, 0.7);
+    font-size: 0.7em;
+    margin-top: 4%;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    nav p {
+        font-size: 1.4em;
+    }
+
+    nav a {
+        font-size: 0.5em;
+    }
+
+    section {
+        font-size: 0.7rem;
+    }
+
+    #search-bar p {
+        font-size: 0.6rem;
+    }
+
+    #articles {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #articles article {
+        width: 84%;
+    }
+
+    footer {
+        font-size: 0.4em;
+        height: 3.5vh;
+    }
+
+    #results p {
+        font-size: 1.2em;
+    }
+    
+    #results button {
+        font-size: 0.9em;
+    }
+
+    #search-bar input {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 500px) {
+    nav p {
+        font-size: 1em;
+    }
+}

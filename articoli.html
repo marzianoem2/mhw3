@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookLife</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png" type="image/icon type">
+
+        <!-- stile testo body -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+        <!-- stile titolo della navbar -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+
+        <script src="script.js" defer="true"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <p>BookLife</p>
+                <div>
+                    <a href="index.html">Home</a> 
+                    <a href="chisiamo.html">Chi Siamo</a> <!-- pagina informativa su cos'è il sito e in cosa consiste la piattaforma -->
+                    <a href="suggerimenti.html">Suggerimenti</a> <!-- pagina in cui si possono avere suggerimenti sui prossimi libri da leggere -->
+                    <a href="autori.html" id="find-auth">Scopri gli autori</a> <!-- pagina informativa sugli autori degli articoli proposti -->
+                </div>
+                
+            </nav>
+
+            <div id="overlay"></div>
+        </header>
+
+        <section>
+            <div id="articles">
+                <article>
+                    <h2>La verità sul caso di Harry Quebert (J. Dicker)</h2>
+
+                    <p>
+                        Intrigante, avvolgente e sorprendente. La verità sul caso di Harry Quebert
+                        è un libro unico, le tante pagine con cui si presenta sono piene di maestria
+                        e bravura dell'autore. Le parole scivolano dalla penna di Joël Dicker senza 
+                        alcuna difficoltà, in un batter d'occhio il lettore si ritrova alla fine della
+                        storia senza ancora aver capito il vero colpevole. Le avventure di Harry e 
+                        del suo fidato amico Marcus lasciano davvero con il fiato sospeso.
+                    </p>
+
+                    <a href="" class="dots">...</a>
+                </article>
+
+                <article>
+                    <h2>La scelta (N. Sparks)</h2>
+
+                    <p>
+                        Come molti altri libri dello stesso autore, La scelta è una storia
+                        che vi farà piangere. È inevitabile appassionarsi alla vicenda di 
+                        Travis e Gabbi, due giovani apparentemente molto diversi, ma uniti 
+                        dalla stessa forza e determinazione. La storia si ambienta in una 
+                        piccola cittadina circondata da meravigliosi paesaggi, Gabbi si è 
+                        appena trasferita e fatica ad ambientarsi, mentre Travis è nato e 
+                        cresciuto lì nella sua amata Beaufort, North Carolina.
+                    </p>
+
+                    <a href="" class="dots">...</a>
+                </article>
+
+                <article>
+                    <h2>Suo marito (L. Pirandello)</h2>
+
+                    <p>
+                        Un titolo quasi sconosciuto a molti, ma una perla nella sua essenza. Suo marito
+                        è un romanzo particolare, offre uno squarcio nella vita dei due protagonisti, Silvia
+                        e Giustino, raccontando due punti di vista diversi e contrari. 
+                    </p>
+
+                    <a href="" class="dots">...</a>
+                </article>
+
+                <article>
+                    <h2>Piccole donne (L. M. Alcott)</h2>
+
+                    <p>
+                        Piccole donne è senza dubbio un classico per le ragazze di tutto il mondo,
+                        che si ritrovano a fare i conti con 4 sorelle, Meg, Amy, Beth e Jo. Le personalità,
+                        le passioni e i sogni delle protagoniste sono messi in risalto nel racconto perspicace
+                        di Louisa May Alcott, che ritrova in Piccole donne il suo più grande successo. Con 
+                        una leggera nota autobiografica, l'autrice porta alla luce due temi fondamentali: i complessi problemi 
+                        adolescenziali e la realizzazione personale nell'età più adulta.
+                    </p>
+
+                    <a href="" class="dots">...</a>
+                </article>
+            </div>
+
+            <article id="dictionary">
+                <form id="search-bar">
+                    <p>
+                        Scrivi una parola che ti è piaciuta negli articoli in una lingua a tua scelta
+                    </p>    
+                    <input type="text" name="word" id="word" placeholder="scrivi una parola...">
+                    <input class="submit" type="submit">
+                </form>
+
+                <div id="results" class="hidden">
+                    <p></p>
+                    <button>
+                        Scrivi Ancora
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <span>BookLife</span>
+            <span>Emiliana</span>
+            <span>Marziano</span>
+            <span>1000014731</span>
+        </footer>
+    </body>
+</html>

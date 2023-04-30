@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookLife - Suggerimenti</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_suggerimemnti.css">
+        <link rel="icon" href="logo.png" type="image/icon type">
+
+        <!-- stile testo body -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+        <!-- stile titolo navbar -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+
+        <script src="suggerimenti.js" defer="true"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <p>BookLife</p>
+                <div>
+                    <a href="index.html">Home</a> 
+                    <a href="chisiamo.html">Chi Siamo</a> <!-- pagina informativa su cos'è il sito e in cosa consiste la piattaforma -->
+                    <a href="articoli.html">Articoli</a> <!-- pagina dove poter leggere e cercare articoli -->
+                    <a href="autori.html" id="find-auth">Scopri gli autori</a> <!-- pagina informativa sugli autori degli articoli proposti -->
+                </div>
+            </nav>
+
+            <div id="overlay"></div>
+        </header>
+
+        <section>
+            <form id="search-info">
+                <p>
+                    Ottieni suggerimenti di libri che potrebbero piacerti
+                </p>
+                <input type="text" name="author" id="author" placeholder="scrivi una parola...">
+                <input class="submit" type='submit'>
+            </form>
+
+            <div id="results-books" class="hidden">
+                <ul></ul>
+                <button>
+                    Cerca Ancora
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <span>BookLife</span>
+            <span>Emiliana</span>
+            <span>Marziano</span>
+            <span>1000014731</span>
+        </footer>
+    </body>
+</html>
